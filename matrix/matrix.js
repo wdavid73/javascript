@@ -1,7 +1,10 @@
-export const Matrix = (size) =>{
-if(size.length % 3 == 0 ){
-    size_matrix = 3;
-}else if(size.length % 2 == 0){
-    size_matrix = 2;
+
+export class Matrix {
+    constructor(txt) {
+        this.rows = txt.split("\n").map(r => r.split(" ").map(x => parseInt(x)));
+        this.columns = [];
+        for (let i = 0; i < this.rows[0].length; i++) {
+            this.columns[i] = Array.from(this.rows, r => r[i]);
+        }
+    }
 }
-}/*haciendo logica para armar la matrix falta por terminar*/
