@@ -1,11 +1,32 @@
-/* eslint-disable no-unused-vars */
-//
-// This is only a SKELETON file for the 'Bob' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
 export const hey = (message) => {
-  //
-  // YOUR CODE GOES HERE
-  //
+  if (message.toUpperCase() === message) {
+    return 'Whoa, chill out!'
+  }
+  else if (message.includes('?')) {
+    return 'Sure.'
+  }
+  else if (message === '') {
+    return 'Fine. Be that way!'
+  } 
+  else {
+    return 'Whatever.'
+  }
+
+  /*
+  switch (message) {
+    case message.toUpperCase() === message:
+      return 'Whoa, chill out!'
+    case message.includes('?'):
+      return 'Sure.'
+     
+    case message === '':
+      return 'Fine. Be that way!'
+    }
+  }
+
+  */
+  /*'Whoa, chill out!' (todo el mensaje debe contener mayusculas)*/
+  /*sure  (en el mensaje debe haber un ?)*/
+  /*Fine. Be that way! (texto vacio)*/
+  /*whatever (caso final)*/
 };

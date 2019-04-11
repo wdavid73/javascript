@@ -2,14 +2,15 @@
 
 Bob is a lackadaisical teenager. In conversation, his responses are very limited.
 
-Bob answers 'Sure.' if you ask him a question.
+Bob answers 'Sure.' if you ask him a question. si le haces una pregunta
 
-He answers 'Whoa, chill out!' if you yell at him.
+He answers 'Whoa, chill out!' if you yell at him. si le gritas (mayusculas)
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
+He says 'Fine. Be that way!' if you address him without actually saying 
+anything. Si se dirige a él sin decir realmente
+cualquier cosa.
 
-He answers 'Whatever.' to anything else.
+He answers 'Whatever.' to anything else.  a cualquier otra cosa.
 
 ## Setup
 

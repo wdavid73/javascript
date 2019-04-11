@@ -1,7 +1,7 @@
 import { hey } from './bob';
 
 describe('Bob', () => {
-  test('stating something', () => {
+  xtest('stating something', () => {
     const result = hey('Tom-ay-to, tom-aaaah-to.');
     expect(result).toEqual('Whatever.');
   });
@@ -42,7 +42,7 @@ describe('Bob', () => {
   });
 
   xtest('forceful question', () => {
-    const result = hey('WHAT THE HELL WERE YOU THINKING?');
+    const result = hey('WHAT THE HELL WERE YOU THINKING?'); 
     expect(result).toEqual('Calm down, I know what I\'m doing!');
   });
 
@@ -51,12 +51,12 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('only numbers', () => {
+  test('only numbers', () => {
     const result = hey('1, 2, 3');
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('question with only numbers', () => {
+  test('question with only numbers', () => {
     const result = hey('4?');
     expect(result).toEqual('Sure.');
   });
@@ -71,12 +71,12 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('statement containing question mark', () => {
+  test('statement containing question mark', () => {
     const result = hey('Ending with a ? means a question.');
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('non-letters with question', () => {
+  test('non-letters with question', () => {
     const result = hey(':) ?');
     expect(result).toEqual('Sure.');
   });
@@ -86,22 +86,22 @@ describe('Bob', () => {
     expect(result).toEqual('Sure.');
   });
 
-  xtest('silence', () => {
+  test('silence', () => {
     const result = hey('');
     expect(result).toEqual('Fine. Be that way!');
   });
 
-  xtest('prolonged silence', () => {
+  test('prolonged silence', () => {
     const result = hey('          ');
     expect(result).toEqual('Fine. Be that way!');
   });
 
-  xtest('alternate silence', () => {
+  test('alternate silence', () => {
     const result = hey('\t\t\t\t\t\t\t\t\t\t');
     expect(result).toEqual('Fine. Be that way!');
   });
 
-  xtest('multiple line question', () => {
+  test('multiple line question', () => {
     const result = hey('\nDoes this cryogenic chamber make me look fat?\nno');
     expect(result).toEqual('Whatever.');
   });
@@ -116,7 +116,7 @@ describe('Bob', () => {
     expect(result).toEqual('Sure.');
   });
 
-  xtest('other whitespace', () => {
+  test('other whitespace', () => {
     const result = hey('\n\r \t');
     expect(result).toEqual('Fine. Be that way!');
   });
